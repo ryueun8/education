@@ -35,16 +35,16 @@
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>120</y>
-        <width>401</width>
-        <height>461</height>
+        <x>670</x>
+        <y>90</y>
+        <width>421</width>
+        <height>501</height>
        </rect>
       </property>
       <property name="title">
@@ -398,17 +398,7 @@ QTabBar::tab:selected {
      </widget>
     </widget>
     <widget class="QWidget" name="page_4">
-     <widget class="QTextBrowser" name="textBrowser">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>100</y>
-        <width>511</width>
-        <height>611</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="std_text">
       <property name="geometry">
        <rect>
         <x>360</x>
@@ -418,7 +408,7 @@ QTabBar::tab:selected {
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="btn_chat">
       <property name="geometry">
        <rect>
         <x>781</x>
@@ -447,6 +437,16 @@ QTabBar::tab:selected {
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>130</y>
+        <width>451</width>
+        <height>581</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_5">
      <widget class="QLabel" name="label_7">
@@ -462,57 +462,98 @@ QTabBar::tab:selected {
        <string>여기는 큐앤에이/ 게시판 어떻게 만들지?</string>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_2">
+     <widget class="QTextBrowser" name="qna_browser">
       <property name="geometry">
        <rect>
-        <x>570</x>
-        <y>330</y>
-        <width>256</width>
-        <height>192</height>
+        <x>730</x>
+        <y>340</y>
+        <width>260</width>
+        <height>251</height>
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
+     <widget class="QTableWidget" name="qna_widget">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>120</y>
-        <width>411</width>
-        <height>461</height>
+        <x>120</x>
+        <y>300</y>
+        <width>591</width>
+        <height>291</height>
        </rect>
       </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>409</width>
-         <height>459</height>
-        </rect>
-       </property>
-      </widget>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>670</x>
-        <y>200</y>
-        <width>86</width>
+        <x>160</x>
+        <y>620</y>
+        <width>191</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>제목,작성자,날짜,상담내용 </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="q_name">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>670</y>
+        <width>113</width>
         <height>25</height>
        </rect>
       </property>
      </widget>
-     <widget class="QDateEdit" name="dateEdit">
+     <widget class="QPushButton" name="btn_q_ok">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>50</y>
-        <width>110</width>
-        <height>26</height>
+        <x>620</x>
+        <y>670</y>
+        <width>89</width>
+        <height>25</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>올리기</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="q_title">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>670</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="q_text">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>670</y>
+        <width>241</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_title">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>300</y>
+        <width>260</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style: solid;
+border-width: 0.5px;
+border-color: rgb(186, 189, 182);</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
